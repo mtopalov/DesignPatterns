@@ -1,8 +1,7 @@
 package com.scalefocus.bridge;
 
 /**
- * Inherits the functionality of {@link RemoteControl}.
- * Implements unimplemented methods.
+ * Inherits the behaviour of {@link RemoteControl}.
  *
  * @author Mariyan Topalov
  */
@@ -12,6 +11,9 @@ public class OldTVRemote extends RemoteControl {
         super(device);
     }
 
+    /**
+     * Calls the {@link Device#mute()} that turns the volume to 0.
+     */
     @Override
     void centerButton() {
         device.mute();

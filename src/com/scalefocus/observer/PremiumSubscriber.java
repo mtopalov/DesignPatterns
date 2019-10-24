@@ -17,6 +17,6 @@ public class PremiumSubscriber extends Subscriber {
      */
     @Override
     public void update() {
-        System.out.println("Premium subscriber: First to receive the notification - " + super.stream.getState());
+        System.out.println("Premium subscriber: First to receive the notification - " + this.stream.getState());
     }
 }

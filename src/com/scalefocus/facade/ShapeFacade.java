@@ -2,11 +2,13 @@ package com.scalefocus.facade;
 
 /**
  * Class that introduces the Facade design pattern.
- * It hides the implementation and provides the user only with simple methods that lead to the actual object method's calls.
+ * That way we hide the complexity of the system
+ * and provide the user only with simple methods
+ * that lead to the actual {@link Shape}'s method calls.
  *
  * @author Mariyan Topalov
  */
-public class ShapeMaker {
+public class ShapeFacade {
 
     private Shape circle;
 
@@ -14,20 +16,29 @@ public class ShapeMaker {
 
     private Shape rectangle;
 
-    public ShapeMaker() {
+    public ShapeFacade() {
         this.circle = new Circle();
         this.square = new Square();
         this.rectangle = new Rectangle();
     }
 
+    /**
+     * Invokes {@link Circle}'s draw method.
+     */
     public void drawCircle() {
         circle.draw();
     }
 
+    /**
+     * Invokes {@link Square}'s draw method.
+     */
     public void drawSquare() {
         square.draw();
     }
 
+    /**
+     * Invokes {@link Rectangle}'s draw method.
+     */
     public void drawRectangle() {
         rectangle.draw();
     }

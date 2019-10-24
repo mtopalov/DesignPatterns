@@ -1,12 +1,16 @@
 package com.scalefocus.factory;
 
 /**
- * Class that implements the functionality of Laptop interface.
+ * Inherits the behaviour of {@link Laptop}.
  *
  * @author Mariyan Topalov
  */
 class Razer implements Laptop {
 
+    /**
+     * The constructor is package-private so the client won't be able
+     * to create instances of {@link Dell} without the {@link LaptopFactory}.
+     */
     Razer() {
     }
 

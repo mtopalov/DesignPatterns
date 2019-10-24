@@ -1,7 +1,7 @@
 package com.scalefocus.command;
 
 /**
- * Interface that declares the "do" and "undo" operations that every {@link Command} must have.
+ * Interface that defines the behaviour that every {@link Command} must have.
  *
  * @author Mariyan Topalov
  */
@@ -9,12 +9,12 @@ package com.scalefocus.command;
 public interface Command {
 
     /**
-     * Executes the current {@link Command}.
+     * Executes the {@link Command}.
      */
     void execute();
 
     /**
-     * Undoes the current {@link Command}.
+     * Undoes the  {@link Command}.
      */
     void undo();
 }

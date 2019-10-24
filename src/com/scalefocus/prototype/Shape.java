@@ -17,6 +17,7 @@ public abstract class Shape {
         this.id = id;
     }
 
+    //getters and setters
     public void setType(String type) {
         this.type = type;
     }
@@ -29,6 +30,14 @@ public abstract class Shape {
         return type;
     }
 
+
+    //abstract methods
+
+    /**
+     * Creates and returns deep copy of the {@link Shape}.
+     *
+     * @return {@link Shape} - deep copy on the {@link Shape}.
+     */
     protected abstract Shape clone();
 
     /**

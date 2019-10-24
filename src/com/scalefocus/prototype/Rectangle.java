@@ -13,14 +13,6 @@ public class Rectangle extends Shape implements Cloneable {
         type = "Rectangle";
     }
 
-    @Override
-    protected Shape clone() {
-        Shape shape = new Rectangle(this.getId());
-        shape.setType(this.getType());
-
-        return shape;
-    }
-
     /**
      * Draws a {@link Rectangle}
      */
@@ -29,5 +21,16 @@ public class Rectangle extends Shape implements Cloneable {
         System.out.println("Rectangle draw..");
     }
 
+    /**
+     * {@inheritDoc}
+     *
+     * @return {@inheritDoc}
+     */
+    @Override
+    protected Shape clone() {
+        Shape shape = new Rectangle(this.getId());
+        shape.setType(this.getType());
 
+        return shape;
+    }
 }

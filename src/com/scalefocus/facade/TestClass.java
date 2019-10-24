@@ -8,11 +8,10 @@ package com.scalefocus.facade;
 public class TestClass {
 
     public static void main(String[] args) {
-        ShapeMaker maker = new ShapeMaker();
+        ShapeFacade maker = new ShapeFacade();
 
         maker.drawCircle();
         maker.drawRectangle();
         maker.drawSquare();
     }
-
 }

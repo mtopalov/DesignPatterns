@@ -21,8 +21,7 @@ public abstract class Subscriber {
     }
 
     /**
-     * Notifies current subscriber if the state of it's {@link Stream} changes.
+     * Notifies subscriber if the state of it's {@link Stream} changes.
      */
     public abstract void update();
-
 }

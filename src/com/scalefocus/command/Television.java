@@ -1,7 +1,7 @@
 package com.scalefocus.command;
 
 /**
- * Implements the methods, declared in {@link ElectronicDevice} interface.
+ * Implements the behaviour, defined in {@link ElectronicDevice} interface.
  *
  * @author Mariyan Topalov
  */

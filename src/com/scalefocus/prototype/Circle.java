@@ -21,6 +21,11 @@ public class Circle extends Shape implements Cloneable {
         System.out.println("Circle draw..");
     }
 
+    /**
+     * {@inheritDoc}
+     *
+     * @return {@inheritDoc}
+     */
     @Override
     protected Shape clone() {
         Shape shape = new Circle(this.getId());

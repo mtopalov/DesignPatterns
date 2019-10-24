@@ -1,12 +1,15 @@
 package com.scalefocus.facade;
 
 /**
- * Class that implements the methods, defined in {@link Shape} interface.
+ * Inherits the behaviour of {@link Shape}.
  *
  * @author Mariyan Topalov
  */
 public class Square implements Shape {
 
+    /**
+     * Draws a {@link Square}.
+     */
     @Override
     public void draw() {
         System.out.println("Square.draw()");

@@ -1,7 +1,7 @@
 package com.scalefocus.bridge;
 
 /**
- * Inherits the functionality of {@link Device}. Implements unimplemented methods.
+ * Inherits the behaviour of {@link Device}.
  *
  * @author Mariyan Topalov
  */
@@ -11,6 +11,9 @@ public class TVDevice extends Device {
         super(100);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void channelUp() {
         if (currentChannel < maxChannel) {
@@ -18,11 +21,13 @@ public class TVDevice extends Device {
         }
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void channelDown() {
         if (currentChannel > 0) {
             currentChannel--;
         }
     }
-
 }

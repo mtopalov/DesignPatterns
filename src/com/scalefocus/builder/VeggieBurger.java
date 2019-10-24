@@ -1,12 +1,11 @@
 package com.scalefocus.builder;
 
 /**
- * Class that inherits the behaviour from {@link Item}.
- * Implements the unimplemented methods
+ * Class that inherits the behaviour of {@link Item}.
  *
  * @author Mariyan Topalov
  */
-public class VeggieBurger implements Item{
+public class VeggieBurger implements Item {
 
     /**
      * {@inheritDoc}

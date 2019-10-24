@@ -17,24 +17,23 @@ public class ShapeCache {
      *
      * @param id {@link int} - parameter used to determine which {@link Shape} to be returned.
      * @return {@link Shape} - clone of the actual {@link Shape} object.
-     * @see Object#clone()
      */
     public static Shape getShape(int id) {
         Shape cachedShape = shapeMap.get(id);
-        return (Shape) cachedShape.clone();
+        return cachedShape.clone();
     }
 
     /**
      * Saves objects of type {@link Shape} into a {@link HashMap}
      */
     public static void loadCache() {
-        Circle circle = new Circle(1);
+        Shape circle = new Circle(1);
         shapeMap.put(circle.getId(), circle);
 
-        Square square = new Square(2);
+        Shape square = new Square(2);
         shapeMap.put(square.getId(), square);
 
-        Rectangle rectangle = new Rectangle(3);
+        Shape rectangle = new Rectangle(3);
         shapeMap.put(rectangle.getId(), rectangle);
     }
 }

@@ -1,7 +1,7 @@
 package com.scalefocus.decorator;
 
 /**
- * Inherits the behaviour of {@link Mobile} and implements it's methods.
+ * Inherits the behaviour of {@link Mobile}.
  *
  * @author Mariyan Topalov
  */

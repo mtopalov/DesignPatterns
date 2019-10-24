@@ -1,28 +1,38 @@
 package com.scalefocus.decorator;
 
 /**
- * Class that implements the new functionality of the {@link Mobile}s.
+ * Class that defines new logic that will be added to the {@link Mobile}, without
  *
  * @author Mariyan Topalov
  */
-public class MobileDecorator extends AbstractMobileDecorator {
+public class MobileDecorator implements Mobile {
+
+    protected Mobile mobile;
 
     public MobileDecorator(Mobile mobile) {
-        super(mobile);
+        this.mobile = mobile;
     }
 
     /**
-     * Calls the old and the new functionality of the {@link Mobile}.
+     * Invokes {@link Mobile}'s playMusic method.
      */
-    public void makeFun(){
+    @Override
+    public void playMusic() {
+        mobile.playMusic();
+    }
+
+    /**
+     * Plays game on the {@link Mobile}.
+     */
+    void playGame() {
+        System.out.println("I can also play games.");
+    }
+
+    /**
+     * Plays game while playing music.
+     */
+    void playGameAndMusic() {
         playMusic();
         playGame();
-    }
-
-    /**
-     * Adds new functionality to the {@link Mobile}.
-     */
-    void playGame(){
-        System.out.println("I can also run video games!");
     }
 }

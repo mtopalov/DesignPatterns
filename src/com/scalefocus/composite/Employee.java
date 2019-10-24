@@ -13,31 +13,54 @@ import java.util.List;
 public class Employee {
 
     private String name;
-    private String job;
+
+    private String position;
+
     private float salary;
 
     private List<Employee> subordinates;
 
-    public Employee(String name, String job, float salary) {
+    public Employee(String name, String position, float salary) {
         this.name = name;
-        this.job = job;
+        this.position = position;
         this.salary = salary;
         this.subordinates = new ArrayList<>();
     }
 
-    public void add(Employee employee){
+    /**
+     * Adds an {@link Employee} to the subordinates {@link List}.
+     *
+     * @param employee - {@link Employee} to be added.
+     */
+    public void add(Employee employee) {
         subordinates.add(employee);
     }
-    public void remove(Employee employee){
+
+    /**
+     * Removes an {@link Employee} from the subordinates {@link List}.
+     *
+     * @param employee - {@link Employee} to be removed.
+     */
+    public void remove(Employee employee) {
         subordinates.remove(employee);
     }
 
+    /**
+     * Returns the subordinates {@link List}
+     *
+     * @return {@link List<Employee>} - Returns the subordinates {@link List}
+     */
     public List<Employee> getSubordinates() {
         return subordinates;
     }
 
+    /**
+     * Formats the information for an {@link Employee} and returns it.
+     *
+     * @return {@link String} - information for the {@link Employee}, formatted to be easy for output.
+     */
     @Override
     public String toString() {
-        return "Name: " + name +"| Job: " + job + "| Salary: " + salary;
+        return "Name: " + name + "| Job: " + position + "| Salary: " + salary;
     }
 }

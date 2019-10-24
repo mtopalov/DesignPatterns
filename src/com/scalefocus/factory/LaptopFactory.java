@@ -1,10 +1,8 @@
 package com.scalefocus.factory;
 
-import java.util.Optional;
-
 /**
  * Class based on the Factory design pattern.
- * It has only one role - to return a new Object of type Laptop,
+ * It has only one role - to return a new Object of type {@link Laptop},
  * based on the given parameter.
  *
  * @author Mariyan Topalov
@@ -20,7 +18,6 @@ public class LaptopFactory {
      * @throws NoSuchLaptopException - this exception is thrown when try to get a {@link Laptop} which does not exist.
      */
     public Laptop getLaptop(String laptopType) throws NoSuchLaptopException {
-
         switch (laptopType.toLowerCase()) {
             case "lenovo": {
                 return new Lenovo();

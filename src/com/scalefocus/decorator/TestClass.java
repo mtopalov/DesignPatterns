@@ -11,9 +11,10 @@ public class TestClass {
         Mobile sony = new Sony();
         Mobile samsung = new Samsung();
 
-        AbstractMobileDecorator mobileDecorator = new MobileDecorator(sony);
+        MobileDecorator mobileDecorator = new MobileDecorator(sony);
+        MobileDecorator mobileDecorator1 = new MobileDecorator(samsung);
 
-        sony.playMusic();
-        mobileDecorator.makeFun();
+        mobileDecorator1.playMusic();
+        mobileDecorator.playGameAndMusic();
     }
 }

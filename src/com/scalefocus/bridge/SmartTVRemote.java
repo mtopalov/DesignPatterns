@@ -1,8 +1,7 @@
 package com.scalefocus.bridge;
 
 /**
- * Inherits the functionality of {@link RemoteControl}.
- * Implements unimplemented methods.
+ * Inherits the behaviour of {@link RemoteControl}.
  *
  * @author Mariyan Topalov
  */
@@ -12,6 +11,9 @@ public class SmartTVRemote extends RemoteControl {
         super(device);
     }
 
+    /**
+     * Pauses the {@link Device}.
+     */
     @Override
     void centerButton() {
         System.out.println("Channel paused.");

@@ -1,14 +1,14 @@
 package com.scalefocus.factory;
 
 /**
- * Declares the functionality of a laptop.
+ * Defines the behaviour of a {@link Laptop}.
  *
  * @author Mariyan Topalov
  */
 public interface Laptop {
 
     /**
-     * Switches on the laptop
+     * Turns on the {@link Laptop}.
      */
     void switchOn();
 }

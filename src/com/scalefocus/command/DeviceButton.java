@@ -15,16 +15,16 @@ public class DeviceButton {
     }
 
     /**
-     * Calls the {@link Command}'s execute method.
+     * Invokes the {@link Command}'s execute method.
      */
-    void press(){
+    void press() {
         command.execute();
     }
 
     /**
      * Undoes the changes done by press method.
      */
-    void pressUndo(){
+    void pressUndo() {
         command.undo();
     }
 }

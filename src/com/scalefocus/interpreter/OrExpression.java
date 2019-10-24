@@ -2,6 +2,7 @@ package com.scalefocus.interpreter;
 
 /**
  * Class that evaluates OR expression.
+ * It holds two {@link Expression}s and checks if one of them is present in a {@link String}.
  *
  * @author Mariyan Topalov
  */
@@ -17,9 +18,9 @@ public class OrExpression implements Expression {
     }
 
     /**
-     * Checks if context, given as parameter, contains either one of the expressions.
+     * Checks if the context, given as parameter, contains either one of the expressions.
      *
-     * @param context {@link String} - context to be checked
+     * @param context {@link String} - the context to be checked
      * @return {@link Boolean} - true if either the first or second expression is true
      */
     @Override

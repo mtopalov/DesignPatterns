@@ -1,7 +1,7 @@
 package com.scalefocus.builder;
 
 /**
- * Defines methods that every item have.
+ * Defines behaviour that every item has.
  *
  * @author Mariyan Topalov
  */

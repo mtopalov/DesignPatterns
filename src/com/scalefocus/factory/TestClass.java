@@ -1,6 +1,8 @@
 package com.scalefocus.factory;
 
 /**
+ * Test class
+ *
  * @author Mariyan Topalov
  */
 public class TestClass {
@@ -9,31 +11,16 @@ public class TestClass {
         LaptopFactory factory = new LaptopFactory();
 
         try {
-            Laptop lenovo = factory.getLaptop("Lenovo");
-            lenovo.switchOn();
-        } catch (NoSuchLaptopException ex) {
-            System.out.println(ex.toString());
-        }
-        try {
-            Laptop dell = factory.getLaptop("Dell");
-            dell.switchOn();
-        } catch (NoSuchLaptopException ex) {
-            System.out.println(ex.toString());
-        }
-        try {
-            Laptop razer = factory.getLaptop("Razer");
-            razer.switchOn();
-        } catch (NoSuchLaptopException ex) {
-            System.out.println(ex.toString());
-        }
-        try {
-            Laptop unknown = factory.getLaptop("Unknown");
+            Laptop unknown = factory.getLaptop("unknown");
             unknown.switchOn();
         } catch (NoSuchLaptopException ex) {
-            System.out.println(ex.toString());
+            System.out.println(ex.getMessage());
         }
-
-
+        try {
+            Laptop lenovo = factory.getLaptop("lenovo");
+            lenovo.switchOn();
+        } catch (NoSuchLaptopException ex) {
+            System.out.println(ex.getMessage());
+        }
     }
-
 }

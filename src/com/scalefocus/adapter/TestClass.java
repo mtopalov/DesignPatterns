@@ -1,6 +1,8 @@
 package com.scalefocus.adapter;
 
 /**
+ * Test class
+ *
  * @author Mariyan Topalov
  */
 public class TestClass {

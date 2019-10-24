@@ -18,7 +18,7 @@ public class TurnDeviceOn implements Command {
     }
 
     /**
-     * Calls {@link ElectronicDevice}'s turn on method.
+     * Invokes the turnOn method of {@link ElectronicDevice}.
      */
     @Override
     public void execute() {

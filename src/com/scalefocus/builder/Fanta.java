@@ -2,7 +2,6 @@ package com.scalefocus.builder;
 
 /**
  * Class that inherits the behaviour from {@link Item}.
- * Implements the unimplemented methods
  *
  * @author Mariyan Topalov
  */

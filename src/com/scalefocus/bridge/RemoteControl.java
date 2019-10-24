@@ -13,23 +13,38 @@ public abstract class RemoteControl {
         this.device = device;
     }
 
-    public void rightButton(){
+    /**
+     * Increases {@link Device}'s volume, by invoking it's volumeUp method..
+     */
+    public void rightButton() {
         device.volumeUp();
     }
 
-    public void leftButton(){
+    /**
+     * Decreases {@link Device}'s volume, by invoking it's volumeUp method..
+     */
+    public void leftButton() {
         device.volumeDown();
     }
 
-    public void upButton(){
+    /**
+     * Increases the {@link Device}'s channel, by invoking it's channelUp method..
+     */
+    public void upButton() {
         device.channelUp();
     }
 
-    public void downButton(){
+    /**
+     * Decreases the {@link Device}'s channel, by invoking it's channelUp method..
+     */
+    public void downButton() {
         device.channelDown();
     }
 
-    public void showInfo(){
+    /**
+     * Prints information about the current state of the {@link Device}.
+     */
+    public void showInfo() {
         device.deviceFeedback();
     }
 

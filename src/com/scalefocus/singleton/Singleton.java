@@ -2,12 +2,13 @@ package com.scalefocus.singleton;
 
 /**
  * Class based on the Singleton design pattern.
- * This class can only have 1 instance.
+ * This class can only have 1 instance and gives global access to it.
  *
  * @author Mariyan Topalov
  */
 public class Singleton {
 
+    //eager initialization
     private static final Singleton instance = new Singleton();
 
     // private constructor to prevent creating object through "new" keyword
@@ -23,5 +24,4 @@ public class Singleton {
     public synchronized static Singleton getInstance() {
         return instance;
     }
-
 }

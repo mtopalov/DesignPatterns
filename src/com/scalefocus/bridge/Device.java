@@ -28,18 +28,27 @@ public abstract class Device {
      */
     public abstract void channelDown();
 
+    /**
+     * Increases the volume by 1, if the volume is lower than 10.
+     */
     public void volumeUp() {
         if (volume < 10) {
             volume++;
         }
     }
 
+    /**
+     * Decreases the volume by 1, if the volume is lower than 10.
+     */
     public void volumeDown() {
         if (volume > 0) {
             volume--;
         }
     }
 
+    /**
+     * Decreases the volume to 0.
+     */
     public void mute() {
         volume = 0;
     }

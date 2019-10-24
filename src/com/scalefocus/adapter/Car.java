@@ -1,7 +1,7 @@
 package com.scalefocus.adapter;
 
 /**
- * Declares the functionality of a Car
+ * Defines the behaviour of a {@link Car}
  *
  * @author Mariyan Topalov
  */
@@ -13,7 +13,7 @@ public interface Car {
     void fireEngine();
 
     /**
-     * Refuels the tank
+     * Refuels the tank.
      */
     void refuel();
 }

@@ -13,19 +13,24 @@ public class Square extends Shape implements Cloneable {
         type = "Square";
     }
 
-    @Override
-    protected Shape clone() {
-        Shape shape = new Square(this.getId());
-        shape.setType(this.getType());
-
-        return shape;
-    }
-
     /**
      * Draws a {@link Square}
      */
     @Override
     void draw() {
         System.out.println("Square draw..");
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * @return {@inheritDoc}
+     */
+    @Override
+    protected Shape clone() {
+        Shape shape = new Square(this.getId());
+        shape.setType(this.getType());
+
+        return shape;
     }
 }

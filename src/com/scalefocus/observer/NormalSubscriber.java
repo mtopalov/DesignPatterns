@@ -17,6 +17,6 @@ public class NormalSubscriber extends Subscriber {
      */
     @Override
     public void update() {
-        System.out.println("Normal subscriber: Receiving the notification - " + super.stream.getState());
+        System.out.println("Normal subscriber: Receiving the notification - " + this.stream.getState());
     }
 }
